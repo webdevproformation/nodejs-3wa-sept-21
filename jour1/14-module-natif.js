@@ -23,6 +23,16 @@ console.log(extname(__filename)); // .js
 console.log(dirname(__filename)); // C:\Users\HP\Desktop\node\jour1
 console.log(sep); // windows \ Linux ou sur MacOS => / 
 
+// créer le fichier 15-exo.js 
+// ce module utilise le module natif path 
+
+// ce fichier contient une variable dossier 
+// c'est un tableau qui contient les valeurs suivantes :
+// "index.js" , presentation.html , style.css 
+
+// parcourir le tableau et si le fichier contient l'extension .js 
+// alors l'afficher dans la console 
+
 
 
 
