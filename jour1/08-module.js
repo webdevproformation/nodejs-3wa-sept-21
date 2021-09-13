@@ -30,3 +30,5 @@ exports.jours = jours;
 
 exports.note = [1,3,4,20]; // syntaxe super courte 
 console.log(module);
+
+// 09-module-fin.js
