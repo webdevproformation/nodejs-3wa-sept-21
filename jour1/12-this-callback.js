@@ -35,3 +35,4 @@ voiture.information2Solution3(); // Renault
 
 // la valeur stockée dans this dépend de son contexte d'exécution 
 
+// 13-closure.js
