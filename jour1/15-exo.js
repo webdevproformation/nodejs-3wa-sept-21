@@ -19,3 +19,4 @@ const asset = resolve(__dirname , "../asset" , "css");
 // /home/user/Desktop/node/asset/css
 console.log(asset);
 
+// 16-fs.js
