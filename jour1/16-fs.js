@@ -55,3 +55,8 @@ fs.readFile( "15-exo.js" , "utf8", function( error , fichier  ){
 // sync
 const fichier = fs.readFileSync( "15-exo.js" , { encoding : "utf8" }  );// 3
 console.log(fichier); // 3
+
+
+// créer le fichier 17-exo.js utilise le module fs 
+// via le module fs créer un fichier 17-index.html
+// remplir 17-index.html avec le texte suivant "je viens de créer un fichier avec nodeJS"
