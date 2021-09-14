@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profil>
+    <nom>Alain</nom>
+    <age>12</age>
+    <isAdmin>false</isAdmin>
+    <articlesId>
+        <id>1</id>
+        <id>3</id>
+        <id>25</id>
+    </articlesId>
+</profil>
