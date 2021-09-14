@@ -65,3 +65,7 @@ app.listen(4300, function(){
 
 // si vous appelez l'adresse suivante : http://localhost:3045/info.xml 
 // le serveur va vous répondre le contenu d'une fichier 01-info.xml présent à côté du fichier 01-exo.js
+
+
+// si vous appelez l'adresse suivante : http://localhost:3045/profil.json 
+// le serveur va vous répondre le contenu d'une fichier 01-profil.json présent à côté du fichier 01-exo.js
