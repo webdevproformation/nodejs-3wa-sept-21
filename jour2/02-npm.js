@@ -57,3 +57,47 @@
 // fichier package.json est un fichier que l'on peut modifier à la main 
 // mais aussi via des commandes qui va modifier le fichier 
 
+// rdv 11h26 @ toute et bon café !!! 
+
+// npm init => pause des questions => génére le fichier package.json
+
+// rôles de ce fichier  :
+// 1 donner de informations sur votre projet : qui / documentation / version / dépôt github
+// 2 dépendances de votre projet ( obligatoire / facultative )
+// 3 créer des alias scripts => que l'on pourra utiliser dans le terminal 
+
+
+// installer une librairie => lodash que je pourrai utiliser dans mon projet 
+// npm i lodash
+// npm install lodash
+
+// barre de progression qui apparait => télécharger le package 
+// une fois fini => info 
+// added 1 package, and audited 2 packages in 6s
+// found 0 vulnerabilities npmjs.com mis en place un système d'audit des fichiers sources 
+// vérifier ?? vulnérabilités => trouvé des manières d'utiliser la librairie pour rendre 
+// votre projet attaquable 
+
+// dossier jour2 => 
+// modifications :
+// 1 modifie le fichier package.json 
+// ajoute une nouvelle valeur dans le fichier 
+/*
+  "dependencies": { // dépendant projet fonctionne il faut OBLIGATOIREMENT QUE lodash 4.17.21 soit installé
+    "lodash": "^4.17.21" //  4.17.21 +  symbole ^ * [ ] versionning sémantique
+  }
+*/
+
+// 2 package-lock.json => complément du fichier package.json
+// donner des informations précises sur le téléchargement
+// donner l'adresse exacte où la source a été télécharger + integrity
+// token / hash permet de garantir que les fichiers télécharger sont indentiques à ceux sur le serveur (dépot npmjs.com) ils fichiers télécharger sont identiques 
+
+// 3 nouveau dossier qui a été créé => dossier node_modules
+// un ou plusieurs dossiers : ici 1 seul dossier lodash
+//  plusieurs fichiers .js 
+//  et un fichier package.json
+// informations sur la libraire que vous venez de télécharger 
+
+// utiliser cette librairie 
+// 03-exemple-lodash.js
