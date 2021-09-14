@@ -36,4 +36,8 @@ module.exports = empty
 - si vous appelez l'adresse http://localhost:3333/posts => retourner le fichier 12.articles.json
 - si vous appelez l'adresse http://localhost:3333/all => retourner le fichier 12.articles.json et le fichier 12.portfolio.json
 fusion des réponses => lodash (merge)
+
+Back Office web ! 
+API => librairie express // piocher des données dans une base NoSQL (MongoDB)
+
 */ 
