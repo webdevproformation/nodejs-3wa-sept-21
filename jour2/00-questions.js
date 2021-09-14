@@ -53,3 +53,15 @@ app.listen(4300, function(){
 // http://localhost:4300/
 
 
+// cas pratique : 
+// dans le dossier jour2, créer un nouveau fichier 01-exo.js
+// ce fichier utilise la module native http et qui permet de créer un serveur 
+
+// si vous appelez l'adresse suivante : http://localhost:3045 
+// le serveur va vous répondre "bienvenue dans votre site internet"
+
+// si vous appelez l'adresse suivante : http://localhost:3045/presentation.html 
+// le serveur va afficher le contenu d'une fichier 01-presentation.html présent à côté du fichier 01-exo.js
+
+// si vous appelez l'adresse suivante : http://localhost:3045/info.xml 
+// le serveur va vous répondre le contenu d'une fichier 01-info.xml présent à côté du fichier 01-exo.js
