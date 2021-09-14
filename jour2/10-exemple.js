@@ -33,6 +33,7 @@ function empty(variable){
     return reponse;
 }
 // 3 utiliser la librairie standard pour detecter toutes les améliorations pour rendre ce code conforme aux règles de la librairie standard
+https://standardjs.com/
 // 4 trouver la commande pour rendre standard le code 
 
 */ 
