@@ -45,3 +45,8 @@ test("salut est false", function(){
 // vérifier anticiper tous les cas 
 // si demain fait evoluer ton code 
 // verification que tes ajouts n'ont casé certain comportement 
+
+// IC : Intégration Continue => 
+// pipeline dans Github 
+
+// ordinateur => push sur github => pipeline TEST => master  => mettre sur ton serveur prod le nouveau code 
