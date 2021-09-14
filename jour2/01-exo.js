@@ -45,3 +45,5 @@ app.listen(PORT , function(){
 // cd jour2
 // node 01-exo.js
 
+// 02-npm.js
+
