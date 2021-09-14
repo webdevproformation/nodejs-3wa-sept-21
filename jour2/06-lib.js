@@ -22,7 +22,7 @@ module.exports = empty ;
 // 06-lib.test.js
 
 // créer un nouveau fichier 07-exo.js
-// cet fichier contient une fonction qui permet de palindrome 
+// ce fichier contient une fonction qui permet de vérifier si un mot est un palindrome 
 // mot qui peuvent se lire dans les deux sens 
 // lol 
 // kayak 
