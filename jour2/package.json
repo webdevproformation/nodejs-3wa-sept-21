@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/webdevproformation/nodejs-3wa-sept-21#readme",
   "dependencies": {
-    "lodash": "^4.17.21",
-    "underscore": "^1.13.1"
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "cowsay": "^1.5.0"
   }
 }
