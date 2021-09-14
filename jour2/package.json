@@ -1,6 +1,6 @@
 {
   "name": "decouverte-npm",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "formation 3WA découverte de nodejs, sept 2021",
   "main": "00-questions.js",
   "scripts": {
@@ -22,11 +22,11 @@
     "url": "https://github.com/webdevproformation/nodejs-3wa-sept-21/issues"
   },
   "homepage": "https://github.com/webdevproformation/nodejs-3wa-sept-21#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
     "cowsay": "^1.5.0",
     "jest": "^27.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

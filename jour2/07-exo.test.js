@@ -50,3 +50,5 @@ test("salut est false", function(){
 // pipeline dans Github 
 
 // ordinateur => push sur github => pipeline TEST => master  => mettre sur ton serveur prod le nouveau code 
+
+// créer 08-versionning.js
