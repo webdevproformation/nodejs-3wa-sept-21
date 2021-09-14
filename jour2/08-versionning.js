@@ -73,4 +73,9 @@
    npm-check-updates -u
 
    npm i
+   npm i -g
+   npm i --global (module globaux)
+   rdv 16h17 
   */ 
+
+// 09-package-global.js
