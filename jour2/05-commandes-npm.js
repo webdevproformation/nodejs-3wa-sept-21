@@ -40,11 +40,15 @@ console.log(info);
 // librairies qui permettent de réaliser des test unitaires 
 // dans comme dépedance de développement que comme des dépendances obligatoires
 // PHPUnit => 
-// en javascript 
+// en javascript => réaliser des tests unitaires
 // jest 
 // jasmine
 // mocha 
 // => rdv 14h !! @ toute suite !! 
 
+// depDeveloppement => librairie qui permettre au développeur de gagner en productivité / qualité de code 
 
+// npm i jest --save-dev
+
+// 06-lib.js
 
