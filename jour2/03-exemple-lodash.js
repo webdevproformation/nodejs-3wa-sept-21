@@ -70,4 +70,14 @@ Object.keys.length([])
 false == false 
 0 === 0 
 
+// installer la librairie qui s'appelle underscore (équivalent de lodash)
+// créer un nouveau fichier 04-exo.js 
+// utiliser la librairie underscore
+// créer un tableau [2, 10 , "bonjour", { id: 1 , titre : "lorem"} , false];
+
+// en utilisant undescore => ajouter à la fin du tableau un id unique
+// en utilisant undescore => vérifier est ce que ce tableau contient le mot "bonjour"
+// en utilisant undescore => vérifier est ce que ce tableau contient la valeur 15
+// créer un nouveau tableau [2, 10 , false , "salut"]
+// en utilisant undescore => quelles sont les éléments communs entre le 1er et le 2ème tableau 
 
