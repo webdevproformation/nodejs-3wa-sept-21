@@ -17,20 +17,20 @@ const server = createServer();
 const PORT = 3333 ;
 server.on("request", function(req , rep){
     if(req.url == "/"){
-        readFile("12.portfolio.json" , "utf8" , (error , file) => {
+        readFile("01.portfolio.json" , "utf8" , (error , file) => {
             rep.writeHead(200, {"Content-Type" : "application/json"});
             rep.write(file);
             rep.end();
         });
     }else if(req.url == "/posts"){
-        readFile("12.articles.json" , "utf8" , (error , file) => {
+        readFile("01.articles.json" , "utf8" , (error , file) => {
             rep.writeHead(200, {"Content-Type" : "application/json"});
             rep.write(file);
             rep.end();
         });
     }else if(req.url == "/all"){
         const reponse = [];
-        readFile("12.portfolio.json" , "utf8" , (error , file) => {
+        readFile("01.portfolio.json" , "utf8" , (error , file) => {
             reponse.push( file );
             readFile("12.articles.json" , "utf8" , (error , file) => {
                 rep.writeHead(200, {"Content-Type" : "application/json"});
