@@ -40,4 +40,17 @@ fusion des réponses => lodash (merge)
 Back Office web ! 
 API => librairie express // piocher des données dans une base NoSQL (MongoDB)
 
+[
+  '{{repeat(4)}}',
+  {
+    id: '{{objectId()}}',
+    titre: '{{lorem(10, "words")}}',
+    contenu: '{{lorem(3, "sentences")}}',
+    categories: [
+      '{{repeat(3)}}',
+      '{{lorem(1, "words")}}'
+    ]
+  }
+]
+
 */ 

@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "url" : "http://google.fr",
+        "titre": "produit 1",
+        "prix" : 12.5
+    },
+    {
+        "id" : 2,
+        "url" : "http://yahoo.fr",
+        "titre": "produit 2",
+        "prix" : 22
+    },
+    {
+        "id" : 3,
+        "url" : "http://gmail.fr",
+        "titre": "produit 3",
+        "prix" : 23
+    },
+    {
+        "id" : 4,
+        "url" : "http://gmail2.fr",
+        "titre": "produit 4",
+        "prix" : 24
+    }
+]

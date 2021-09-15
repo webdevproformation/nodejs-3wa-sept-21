@@ -1,0 +1,28 @@
+{
+  "name": "decouverte-npm",
+  "version": "2.0.0",
+  "description": "formation 3WA découverte de nodejs, sept 2021",
+  "main": "00-questions.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevproformation/nodejs-3wa-sept-21.git"
+  },
+  "keywords": [
+    "formation",
+    "node",
+    "découverte",
+    "npm"
+  ],
+  "author": "Malik H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdevproformation/nodejs-3wa-sept-21/issues"
+  },
+  "homepage": "https://github.com/webdevproformation/nodejs-3wa-sept-21#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
