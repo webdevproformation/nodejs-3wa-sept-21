@@ -32,9 +32,10 @@ server.on("request", function(req , rep){
         const reponse = [];
         readFile("01.portfolio.json" , "utf8" , (error , file) => {
             reponse.push( file );
-            readFile("12.articles.json" , "utf8" , (error , file) => {
+            readFile("01.articles.json" , "utf8" , (error , file) => {
                 rep.writeHead(200, {"Content-Type" : "application/json"});
                 reponse.push( file )
+                console.log(reponse);
                 rep.write(reponse);
                 rep.end();
                 // json generator => https://www.json-generator.com/
