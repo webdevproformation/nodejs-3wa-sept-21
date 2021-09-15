@@ -13,9 +13,7 @@ const data = [
 
 app.get("/article/:id" , (req, res) => {
     const id = req.params.id ;
-
     const articleRecherche = data.filter( function(item){ return item.id == id } )
-
     if(articleRecherche.length > 0){
         return res.send(articleRecherche);
     }
@@ -27,4 +25,4 @@ app.get("/article/:id" , (req, res) => {
 app.listen(1234 , () => {
     console.log("le serveur est démarré");
 });
-// nodemon 07-express-params.js
+// nodemon 07-express-params.js rdv 14h00 // bon appétit !!

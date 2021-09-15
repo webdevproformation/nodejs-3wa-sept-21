@@ -17,6 +17,7 @@ app.get("/data.json", (req, res) =>{
 });
 app.get("/article/1", (req, res) =>{ 
     readFile("05-article.json", "utf8", (err, file) =>{
+        res.header("content-type", "application/json");
         res.send(file);
     })
 });
