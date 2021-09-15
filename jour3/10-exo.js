@@ -20,3 +20,13 @@ app.post("/",(req, res) => {
 app.listen(1237  , () => console.log("ok"));
 // nodemon 10-exo.js
 // http://localhost:1237
+
+// put mettre à jour une info
+// delete supprimer une
+
+// CRUD : Create Read Update Delete 
+// middleware plus en détail de express
+// MongoDB (sur votre ordinateur / online service AtlasMongoDB)
+// 16h10 @ toute suite !! bon café !! 
+
+// 11-verif.js
