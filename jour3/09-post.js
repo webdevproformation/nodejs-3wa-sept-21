@@ -16,3 +16,26 @@ app.post("/", function(req, rep){
 app.listen(1236 , function(){
     console.log("ok");
 });
+
+// créer le fichier 10-exo.js qui 
+// utilise express pour créer un server 
+// et une variable data = [ ]
+// serveur
+// GET http://localhost:1237/<id>
+// rechercher est ce que le tableau data contient la valeur id ?? 
+
+// POST http://localhost:1237/
+// ajouter à la suite (push ) la valeur dans le tableau data
+
+
+// client postman
+// postman => appeler la route  http://localhost:1237/ avec la méthode POST
+// envoyer les données suivantes
+// {id : 3 , nom : "PC portable"}
+// {id : 15 , nom : "Ecran plasma"}
+
+// postman => appeler la route  http://localhost:1237/15 avec la méthode GET
+// [{id : 15 , nom : "Ecran plasma"}]
+
+// postman => appeler la route  http://localhost:1237/1 avec la méthode GET
+// Erreur 404 + aucun article ayant l'id 1 n'est disponible 
