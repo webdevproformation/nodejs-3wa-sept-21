@@ -30,15 +30,23 @@ server.on("request", function(req , rep){
             rep.end();
         });
     }else if(req.url == "/all"){
-       
-        readFile("01.portfolio.json" , "utf8" , (error , file) => {
-            //reponse.push( file );
+        const reponse = [];
+        readFile("12.portfolio.json" , "utf8" , (error , file) => {
+            
+            try{
+                if( !error ){
+                    reponse.push( JSON.parse(file) );
+                }else {
+                    reponse.push( JSON.stringify(error) );
+                }
+            }catch( err ){
+                reponse.push( JSON.parse("erreur exécution") );
+            }
+            
             readFile("01.articles.json" , "utf8" , (error , file2) => {
                 rep.writeHead(200, {"Content-Type" : "application/json"});
-                //reponse.push( file2 )
-                const reponse = _.merge(file, file2);
-                console.log(reponse);
-                rep.write(JSON.stringify(reponse));
+                reponse.push( JSON.parse(file2) );
+                rep.write(JSON.stringify(reponse)); // rep.write("string") // 
                 rep.end();
                 // json generator => https://www.json-generator.com/
             });
