@@ -42,7 +42,7 @@ app.listen(1234 , () => {
 
 
 /*
-[
+module.exports = [
   {
     "_id": "6141e191f611621a4e6d3921",
     "titre": "dolor ipsum velit eiusmod aute",
