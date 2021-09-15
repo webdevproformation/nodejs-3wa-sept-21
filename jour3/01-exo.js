@@ -51,3 +51,5 @@ server.listen(PORT , function(){
 });
 // node 01-exo.js
 // pendant la phase de développement nodemon 01-exo.js
+
+// 02-api.js dans le dossier jour3
