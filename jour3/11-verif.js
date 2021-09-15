@@ -22,7 +22,7 @@ app.get("/", function(req, rep){
 });
 app.post("/", (req, rep) => {
     const body = req.body;
-    const verif = schema.validate( body );
+    const verif = schema.validate( body , {abortEarly : false} );
     if(Object.keys(verif).length > 1){
         console.log(verif.error.details);
         return rep.send(verif.error.details);
