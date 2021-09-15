@@ -25,8 +25,7 @@ app.listen(1236 , function(){
 // rechercher est ce que le tableau data contient la valeur id ?? 
 
 // POST http://localhost:1237/
-// ajouter à la suite (push ) la valeur dans le tableau data
-
+// ajouter à la suite ( push ) la valeur dans le tableau data
 
 // client postman
 // postman => appeler la route  http://localhost:1237/ avec la méthode POST
