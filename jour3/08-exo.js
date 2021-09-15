@@ -17,3 +17,8 @@ app.get("/categorie/:mot" , (req, rep) => {
 app.listen(1235 , () => {
     console.log("ok")
 })
+
+// GET 
+// POST => permet d'ajoute d'ajouter une nouvelle valeur
+
+// 09-post.js
