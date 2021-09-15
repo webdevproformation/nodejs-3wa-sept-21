@@ -40,3 +40,12 @@ app.listen(2222, function(){
     console.log("le serveur express est démarré");
 }); 
 // nodemon 05-express.js
+
+// créer un nouveau fichier 06-exo.js
+// ce fichier utilise la librairie express
+
+// via express vous allez créer 4 routes get 
+// http://localhost:5555 => bonjour les amis
+// http://localhost:5555/porfolio => retourner un fichier 05-porfolio.html  (contenu à votre contenance)
+// http://localhost:5555/data.json => retourner un fichier 05-data.json  (contenu à votre contenance)
+// http://localhost:5555/article/1 => retourner un fichier 05-article.json  (contenu à votre contenance)
