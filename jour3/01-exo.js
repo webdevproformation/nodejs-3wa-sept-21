@@ -14,6 +14,7 @@
 const {createServer} = require("http");
 const { readFile } = require("fs");
 const server = createServer();
+const _ = require("lodash");
 const PORT = 3333 ;
 server.on("request", function(req , rep){
     if(req.url == "/"){
@@ -29,14 +30,15 @@ server.on("request", function(req , rep){
             rep.end();
         });
     }else if(req.url == "/all"){
-        const reponse = [];
+       
         readFile("01.portfolio.json" , "utf8" , (error , file) => {
-            reponse.push( file );
-            readFile("01.articles.json" , "utf8" , (error , file) => {
+            //reponse.push( file );
+            readFile("01.articles.json" , "utf8" , (error , file2) => {
                 rep.writeHead(200, {"Content-Type" : "application/json"});
-                reponse.push( file )
+                //reponse.push( file2 )
+                const reponse = _.merge(file, file2);
                 console.log(reponse);
-                rep.write(reponse);
+                rep.write(JSON.stringify(reponse));
                 rep.end();
                 // json generator => https://www.json-generator.com/
             });
