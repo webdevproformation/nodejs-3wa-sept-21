@@ -6,7 +6,7 @@ const env = app.get("env");  // https://expressjs.com/fr/4x/api.html#app.setting
 
 app.get("/", (req ,rep) => {
     console.log(env);
-    const lang = process.env.LANG_ENV;
+    const lang = process.env.LANG_ENV ;
     if( env == "production"){
         return rep.send(`bienvenu sur le serveur de production ${lang}`);
     }
@@ -42,3 +42,31 @@ app.listen( PORT , () => console.log(` serveur écoute sur le port ${PORT}`) );
 
 // déplacer flêche vers le bas / vers haut 
 // q pour quit => vous redonne la main sur le terminal
+
+// cas pratique 
+
+// créer le fichier 03-exo.js
+/* créer une variable data = [{
+      "id": 1,
+      "isActive": true,
+      "name": "Peck Hawkins"
+    }]
+*/
+// méthode post 
+// si on est dans un environne de test 
+/*  {
+    "id": 1,
+    "isActive": true,
+    "name": "Peck Hawkins"
+} */
+
+// si on est dans un environne de production 
+/*  {
+    "isActive": true,
+    "name": "Peck Hawkins"
+} */
+
+// par défaut le port d'écoute est le 1235 => vous allez le modifier pourqu'il soit égal à 12025
+
+// tester cette application via postman
+
