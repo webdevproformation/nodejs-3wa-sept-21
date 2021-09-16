@@ -1,5 +1,7 @@
 const express = require("express");
-const data = [];
+const data = [
+    { id : 22 , titre : "article à modifier" , contenu : "lorem ipsum lorem ipsum"}
+];
 const Joi = require("@hapi/joi");
 
 const app = express();
@@ -29,7 +31,30 @@ app.post("/", (req, res) => {
 })
 
 // mis à jour
-app.put("/:id", (req, res) => { })
+app.put("/:id", (req, res) => { // http://localhost:1239/22
+    // démarrer le logiciel Postman
+    const id = req.params.id;
+    // ESt ce que la variable data contient un enregistrement avec id = 22
+    const articleAModifier = data.find( function(item) {
+        return item.id == id ;
+    })
+    // si articleAModifier == undefined => article à modifier n'existe pas 
+    // erreur 404 
+    if(articleAModifier == undefined){
+        return res.status(404).send(`l'article numéro ${id} n'existe pas`);
+    }
+    // est ce que les données envoyées par le client (postman) sont conformes ??
+    const body = req.body ;
+    const verif = schemaArticle.validate(body , {abortEarly : false});
+    // { value , error }
+    if(Object.keys(verif).length > 1){
+        return res.status(400).send(`la requête est incorrecte`);
+    }
+    // Modification 
+    const index = data.indexOf(articleAModifier);
+    data[index] = body ;// modification effectuée
+    res.send(data);
+})
 
 // supprimer des données
 app.delete("/:id", (req, res) => { 
