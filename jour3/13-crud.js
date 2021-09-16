@@ -69,3 +69,44 @@ app.delete("/:id", (req, res) => {
 
 app.listen(1239, () => console.log("ok"))
 // nodemon 13-crud.js
+
+
+// créer le dossier jour4
+// créer dans ce dossier le fichier package.json 
+// installer en local les packages (pour ce dossier) express et @hapi/joi 
+
+// créer le fichier 01-exo.js 
+// réaliser un crud complet Create Read Update Delete 
+// sur les données suivantes 
+// vous pouvez stocker ces données dans un fichier 01-bdd.js et l'exporter comme module
+// Sécurité : VEuillez verifier que les données sont conformes avec de les intégrer dans votre code !!
+/**
+ * [
+  {
+    "id": 1,
+    "isActive": true,
+    "age": 30,
+    "name": "Peck Hawkins",
+    "gender": "male",
+    "email": "peckhawkins@edecine.com"
+  },
+  {
+    "id": 2,
+    "isActive": false,
+    "age": 32,
+    "name": "Mckinney Preston",
+    "gender": "male",
+    "email": "mckinneypreston@edecine.com"
+  },
+  {
+    "id": 3,
+    "isActive": true,
+    "age": 37,
+    "name": "Rebekah Weeks",
+    "gender": "female",
+    "email": "rebekahweeks@edecine.com"
+  }
+]
+ * 
+ * 
+ */
