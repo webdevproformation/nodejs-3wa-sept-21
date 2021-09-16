@@ -37,3 +37,7 @@ app.listen (PORT , () => console.log(`serveur écoute sur le port ${PORT}`));
 // $env:NODE_ENV="production" 
 
 // export NODE_ENV=production && export PORT=12025 && nodemon 03-exo.js
+
+// rdv 14h00 => express middleware !
+
+// 04-middleware.js
