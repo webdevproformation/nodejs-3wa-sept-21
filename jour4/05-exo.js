@@ -9,7 +9,16 @@ function modifBody(req, rep, next){
     next();
 }
 app.post("/" , [ express.json() , modifBody ] , (req, rep) => {
+    /* let tableau = ["bonjour", "les"];
+    tableau.list = [1,2,3]
+    tableau.push("amis");
+    for(let prop in tableau){
+        console.log(prop);
+    } */
     rep.send(req.body);
 })
 app.listen(PORT , () => console.log(`ok sur le port ${PORT}` ));
 // nodemon 05-exo.js
+
+
+// 06-middleware-globaux.js
