@@ -62,3 +62,6 @@ app.delete("/:id" , (req , res) => {
 
 app.listen(1111, () => console.log("ok"))
 // lancer le serveur nodemon 01-exo.js
+
+// 11h28 bon café @ toute suite !!
+// 02-variable-environnement.js
