@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="07-style.css">
+    <script src="07-js.js"></script>
+    <!-- link => https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css
+        requete multi origin
+        client  => serveur 1 http://127.0.0.1:5500/jour4/07-index.html
+        index.html (serveur 1 http://127.0.0.1:5500/jour4/07-index.html)
+        bootstrap.min.css (serveur 2)
+
+        mécanisme automatique de protection : requete ?? est ce que je suis autorisé à utiliser cette ressource demandé 
+        réponse du serveur dans son entête :
+        si Access-Control-Allow-Origin => * => ok je peux utiliser 
+        si Access-Control-Allow-Origin => http://127.0.0.1:5500 => ok je peux utiliser 
+        l'entête est absent => navigateur web va te retourner un message d'erreur CORS 
+    -->
+</head>
+<body>
+    <script>
+        const req = new XMLHttpRequest() // ajax 
+        req.open("get","http://localhost:1236")
+        req.send();
+        req.onload = () => {
+            console.log(req.responseText);
+        }
+        // live-server
+        // appel ajax http://localhost:1236
+        // Blocage d’une requête multiorigine (Cross-Origin Request) : CORS
+        // dans les navigateurs web mécanisme de sécurité qui empêche le navigateur d'utiliser des ressources qui ne sont pas sur la même adresse web 
+        // serveur       http://localhost:1236
+        // client (page) http://127.0.0.1:5500/jour4/07-index.html
+
+        // deux adresses différentes : le serveur a une adresse web différentes de celle du client
+        // client va refuser réaliser la demande récupération des données 
+    </script>
+</body>
+</html>
