@@ -41,3 +41,23 @@ app.delete("/" , (req, rep)=> {})
 app.listen( PORT , () => console.log(`port ${PORT}`));
 
 // export PORT= && nodemon 04-middleware.js
+
+// créer le fichier 05-exo.js
+// utilise express sur le port 2222
+
+// post sur http://localhost:2222
+// avant de trouver une réponse vous allez effectuer un traitement via un middleware 
+
+/*{
+    "id": 1,
+    "isActive": true,
+    "age": 30,
+    "name": "Peck Hawkins",
+    "gender": "male",
+    "email": "peckhawkins@edecine.com"
+  } */
+
+// transformer => "gender": "male" => "gender": "homme"
+// ajouter une nouvelle propriété à la valeur postée => dt_creation : JJ/MM/AAAA
+
+// afficher la valeur dans le client 
