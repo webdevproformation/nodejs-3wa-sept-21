@@ -60,7 +60,7 @@ app.listen( PORT , () => console.log(` serveur écoute sur le port ${PORT}`) );
     "name": "Peck Hawkins"
 } */
 
-// si on est dans un environne de production 
+// si on est dans un environnement de production 
 /*  {
     "isActive": true,
     "name": "Peck Hawkins"
