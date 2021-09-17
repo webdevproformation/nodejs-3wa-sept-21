@@ -72,3 +72,5 @@ setTimeout( () => {
 } , 2000);
 
 // 10-await-async.js
+
+// 11-await-async-erreur.js
