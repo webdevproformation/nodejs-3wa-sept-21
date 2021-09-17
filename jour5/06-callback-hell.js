@@ -41,5 +41,6 @@ p.then( ( result) => {
     console.log( result ) ; 
     q.then( (result ) => { console.log( result )  } )
  }  );
+// 07-promesse.js
 
 
