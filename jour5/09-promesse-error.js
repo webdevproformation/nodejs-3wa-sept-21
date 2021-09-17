@@ -43,7 +43,7 @@ const envoiEmail = function(){
 const i = "bonjour";
 connexion().then( () => { return createEmail() } )
            .then( () => { return envoiEmail( )})
-           .catch( (messageErreur) => { console.log( messageErreur)} );
+           .catch( (message) => { console.log(message) })
 
 
 setTimeout( () => {
