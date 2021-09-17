@@ -46,3 +46,5 @@ function getData( cb ){
 getData( function( data ){ 
     console.log("utilisation callback" ,  data ) ;
 });
+
+// 06-callback-hell.js
