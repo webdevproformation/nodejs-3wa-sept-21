@@ -65,7 +65,7 @@ async function mailing(){
     await emissionEmail2();
 }
 mailing();
-
+// rdv 16h18 @ toute suite !! 
  
 setTimeout( () => {
     console.log(i)
