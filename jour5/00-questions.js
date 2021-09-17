@@ -32,4 +32,6 @@ partage de notes : https://github.com/webdevproformation/nodejs-3wa-sept-21
     </body>
 </html>
 à réaliser via pug
+
+// base de données NoSQL => MongoDB ! 
 */
