@@ -1,5 +1,5 @@
 //09-promesse-error.js
-const adresse = "http://localhost:124"
+const adresse = "http://localhost:1234";
 // 1 connecter le serveur
 const connexion = function(){
     return new Promise((resolve , reject) => {
@@ -28,7 +28,7 @@ const createEmail = function(){
 // 3 mail envoyé 
 const envoiEmail = function(){
     return new Promise((resolve , reject) => {
-        const serveurMail = false ;
+        const serveurMail = true ;
         if( serveurMail ){
             console.log( "le mail est envoyé")
             resolve();
@@ -41,11 +41,32 @@ const envoiEmail = function(){
 // Promise permet de bloquer l'exécution si une Promesse 
 
 const i = "bonjour";
-connexion().then( () => { return createEmail() } )
-           .then( () => { return envoiEmail( )})
-           .catch( (message) => { console.log(message) })
+// connexion().then()
 
+// await is only valid in async function
+async function emissionEmail(){
+    await connexion(); 
+    await createEmail();
+    await envoiEmail();
+    // écrire de l'asynchrone comme du synchrone 
+    // le code va être exécuté dans l'ordre dans lequel vous l'avez écrit 
+}
+// await async dans des fonctions fléchées
 
+const emissionEmail2 = async () => {
+    await connexion(); 
+    await createEmail();
+    await envoiEmail();
+}
+async function mailing(){
+    console.log("premier mail")
+    await emissionEmail();
+    console.log("deuxième mail")
+    await emissionEmail2();
+}
+mailing();
+
+ 
 setTimeout( () => {
     console.log(i)
 } , 2000);
